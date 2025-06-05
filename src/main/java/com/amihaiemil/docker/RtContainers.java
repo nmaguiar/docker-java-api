@@ -29,7 +29,6 @@ import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.message.BasicHeader;
 import javax.json.Json;
 import javax.json.JsonObject;
 import java.io.IOException;
@@ -116,8 +115,12 @@ abstract class RtContainers implements Containers {
         }
         final HttpPost post = new HttpPost(uri);
         try {
-            post.setEntity(new StringEntity(container.toString()));
-            post.setHeader(new BasicHeader("Content-Type", "application/json"));
+            post.setEntity(
+                new StringEntity(
+                    container.toString(),
+                    org.apache.http.entity.ContentType.APPLICATION_JSON
+                )
+            );
             final JsonObject json = this.client.execute(
                 post,
                 new ReadJsonObject(
