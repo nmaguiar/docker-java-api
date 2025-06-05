@@ -53,7 +53,7 @@ public final class UnixDocker extends RtDocker {
      *     (most likely /var/run/docker.sock).
      */
     public UnixDocker(final File unixSocket){
-        this(unixSocket, "v1.35");
+        this(unixSocket, "v1.43");
     }
 
     /**
