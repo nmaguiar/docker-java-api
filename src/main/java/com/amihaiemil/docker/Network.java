@@ -33,7 +33,7 @@ import javax.json.JsonObject;
  * 
  * @author George Aristy (george.aristy@gmail.com)
  * @version $Id$
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Network">Docker API v1.35</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Network">Docker API v1.50</a>
  * @since 0.0.4
  */
 public interface Network extends JsonObject {
@@ -41,7 +41,7 @@ public interface Network extends JsonObject {
     /**
      * Return detailed information about this network.
      * @return JsonObject information.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkInspect">Inspect a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkInspect">Inspect a network</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
@@ -53,7 +53,7 @@ public interface Network extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkDelete">Remove a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkDelete">Remove a network</a>
      */
     void remove() throws IOException, UnexpectedResponseException;
 
@@ -64,7 +64,7 @@ public interface Network extends JsonObject {
      * @throws IOException  If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkConnect">Connect a container to a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkConnect">Connect a container to a network</a>
      */
     void connect(final String containerId)
         throws IOException, UnexpectedResponseException;
@@ -76,7 +76,7 @@ public interface Network extends JsonObject {
      * @throws IOException  If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkDisconnect">Disconnect a container from a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkDisconnect">Disconnect a container from a network</a>
      */
     void disconnect(final String containerId)
         throws IOException, UnexpectedResponseException;

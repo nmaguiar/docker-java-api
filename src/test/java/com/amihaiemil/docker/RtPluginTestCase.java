@@ -83,7 +83,7 @@ public final class RtPluginTestCase {
                     req -> req.getRequestLine().getUri().endsWith("/p1/json")
                 )
             ),
-            URI.create("http://localhost:80/1.35/plugins/p1"),
+            URI.create("http://localhost:80/1.50/plugins/p1"),
             DOCKER
         );
         final JsonObject info = plugin.inspect();

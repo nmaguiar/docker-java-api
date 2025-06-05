@@ -42,9 +42,9 @@ import javax.json.Json;
  * a token from a previous session and you wish to reuse it.
  *
  * @author George Aristy (george.aristy@gmail.com)
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#section/Authentication">Authentication</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#section/Authentication">Authentication</a>
  * @see <a href="https://docs.docker.com/registry/spec/auth/token/">Token Authentication Specification</a>
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/SystemAuth">Check auth configuration</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/SystemAuth">Check auth configuration</a>
  * @version $Id$
  * @since 0.0.4
  */

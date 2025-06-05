@@ -43,7 +43,7 @@ public interface Plugins extends Iterable<Plugin> {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/PluginCreate">Create a plugin</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/PluginCreate">Create a plugin</a>
      */
     void create(final String name, final String directory)
         throws IOException, UnexpectedResponseException;
@@ -56,7 +56,7 @@ public interface Plugins extends Iterable<Plugin> {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/PluginPull">Install a plugin</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/PluginPull">Install a plugin</a>
      */
     void pullAndInstall(final String remote, final String name,
                           final JsonArray properties)
@@ -69,7 +69,7 @@ public interface Plugins extends Iterable<Plugin> {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/GetPluginPrivileges">Get plugin privileges</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/GetPluginPrivileges">Get plugin privileges</a>
      */
     Iterator<PluginPrivilege> privileges(final String remote)
         throws IOException, UnexpectedResponseException;

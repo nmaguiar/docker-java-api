@@ -29,7 +29,7 @@ package com.amihaiemil.docker;
  * Authentication for Docker API.
  * @author George Aristy (george.aristy@gmail.com)
  * @version $Id$
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#section/Authentication">Authentication</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#section/Authentication">Authentication</a>
  * @since 0.0.1
  */
 public interface Auth {

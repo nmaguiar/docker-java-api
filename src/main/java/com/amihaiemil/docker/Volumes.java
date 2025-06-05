@@ -44,7 +44,7 @@ public interface Volumes extends Iterable<Volume> {
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
      * @return The created volume.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/VolumeCreate">Create a volume</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/VolumeCreate">Create a volume</a>
      */
     Volume create(final String name)
         throws IOException, UnexpectedResponseException;
@@ -57,7 +57,7 @@ public interface Volumes extends Iterable<Volume> {
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
      * @return The created volume.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/VolumeCreate">Create a volume</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/VolumeCreate">Create a volume</a>
      */
     Volume create(final String name, final JsonObject parameters)
         throws IOException, UnexpectedResponseException;

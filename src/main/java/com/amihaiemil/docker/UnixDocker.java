@@ -53,14 +53,14 @@ public final class UnixDocker extends RtDocker {
      *     (most likely /var/run/docker.sock).
      */
     public UnixDocker(final File unixSocket){
-        this(unixSocket, "v1.35");
+        this(unixSocket, "v1.50");
     }
 
     /**
      * Unix Docker engine.
      * @param unixSocket Unix socket File on disk.
      *     (most likely /var/run/docker.sock).
-     * @param version API version (e.g. v1.30).
+     * @param version API version (e.g. v1.50).
      */
     public UnixDocker(final File unixSocket, final String version){
         this(new UnixHttpClient(unixSocket), version);
@@ -72,7 +72,7 @@ public final class UnixDocker extends RtDocker {
      * Users may supply their own {@link HttpClient} that must register a
      * {@link UnixSocketFactory}.
      * @param client The http client to use.
-     * @param version API version (e.g. v1.30).
+     * @param version API version (e.g. v1.50).
      */
     public UnixDocker(final HttpClient client, final String version) {
         super(client, URI.create("unix://localhost:80/" + version));

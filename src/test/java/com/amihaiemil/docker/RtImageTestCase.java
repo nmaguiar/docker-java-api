@@ -79,7 +79,7 @@ public final class RtImageTestCase {
                     req -> req.getRequestLine().getUri().endsWith("/456/json")
                 )
             ),
-            URI.create("http://localhost:80/1.30/images/456"),
+            URI.create("http://localhost:80/1.50/images/456"),
             DOCKER
         );
         final JsonObject info = image.inspect();
@@ -113,7 +113,7 @@ public final class RtImageTestCase {
                         Json.createArrayBuilder().build().toString()
                     )
                 ),
-                URI.create("http://localhost:80/1.30/images/456"),
+                URI.create("http://localhost:80/1.50/images/456"),
                 DOCKER
             ).history(),
             Matchers.allOf(
@@ -344,7 +344,7 @@ public final class RtImageTestCase {
                         Json.createArrayBuilder().build().toString()
                     )
                 ),
-                URI.create("http://localhost:80/1.30/images/456"),
+                URI.create("http://localhost:80/1.50/images/456"),
                 DOCKER
             ).docker(),
             Matchers.is(DOCKER)

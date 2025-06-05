@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.amihaiemil.web</groupId>
 	<artifactId>docker-java-api</artifactId>
-	<version>0.0.14-SNAPSHOT</version><!--rrv-sed-flag-->
+        <version>0.0.15-SNAPSHOT</version><!--rrv-sed-flag-->
 	<name>Docker Java API</name>
 	<description>Elegant OOP wrapper over Docker's API</description>
 	<url>https://www.github.com/amihaiemil/docker-java-api</url>
@@ -40,23 +40,23 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.5.5</version>
+                        <version>4.5.14</version>
 		</dependency>
 		<dependency>
 		    <groupId>com.github.jnr</groupId>
 		    <artifactId>jnr-unixsocket</artifactId>
-		    <version>0.18</version>
+                    <version>0.38.23</version>
 		</dependency>
                 <dependency>
                     <groupId>javax.json</groupId>
                     <artifactId>javax.json-api</artifactId>
-                    <version>1.0</version>
+                    <version>1.1.4</version>
                     <scope>provided</scope>
                 </dependency>
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.json</artifactId>
-			<version>1.0.4</version>
+                        <version>1.1.4</version>
                         <scope>test</scope>
 		</dependency>
 		<dependency>

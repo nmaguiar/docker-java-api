@@ -38,7 +38,7 @@ import javax.json.JsonObjectBuilder;
  * An {@link Auth} holding a Registry Config.
  * Auth configurations for multiple registries that a build may refer to.
  * @author Boris Kuzmic (boris.kuzmic@gmail.com)
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageBuild">Build an image</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageBuild">Build an image</a>
  * @since 0.0.7
  */
 public final class RegistryConfigAuth implements Auth {

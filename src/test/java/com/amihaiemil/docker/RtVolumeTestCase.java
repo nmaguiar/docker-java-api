@@ -78,7 +78,7 @@ public final class RtVolumeTestCase {
                     req -> req.getRequestLine().getUri().endsWith("/v1")
                 )
             ),
-            URI.create("http://localhost:80/1.35/volumes/v1"),
+            URI.create("http://localhost:80/1.50/volumes/v1"),
             DOCKER
         );
         final JsonObject info = volume.inspect();

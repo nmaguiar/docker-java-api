@@ -48,7 +48,7 @@ public interface Container extends JsonObject {
 
     /**
      * Start this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerStart">Start Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerStart">Start Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -63,7 +63,7 @@ public interface Container extends JsonObject {
 
     /**
      * Stop this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerStop">Stop Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerStop">Stop Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -72,7 +72,7 @@ public interface Container extends JsonObject {
 
     /**
      * Kill this container. SIGKILL is sent to this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerKill">Kill Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerKill">Kill Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -81,7 +81,7 @@ public interface Container extends JsonObject {
 
     /**
      * Restarts this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerRestart">Restart Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerRestart">Restart Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -91,7 +91,7 @@ public interface Container extends JsonObject {
     /**
      * Rename this container.
      * @param name New name for the container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerRename">Rename Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerRename">Rename Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -101,7 +101,7 @@ public interface Container extends JsonObject {
     
     /**
      * Remove this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerDelete">Delete Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerDelete">Delete Container</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (204 NO CONTENT).
@@ -111,7 +111,7 @@ public interface Container extends JsonObject {
     
     /**
      * Remove this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerDelete">Delete Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerDelete">Delete Container</a>
      * @param volumes Remove the volumes associated with the container.
      * @param force If the container is running, kill it before removing it.
      * @param link Remove the specified link associated with the container.
@@ -138,7 +138,7 @@ public interface Container extends JsonObject {
 
     /**
      * Pause this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerPause">Pause Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerPause">Pause Container</a>
      * @throws IOException If something goes wrong.
      *  the expected one (204 NO CONTENT).
      */
@@ -146,7 +146,7 @@ public interface Container extends JsonObject {
 
     /**
      * Unpause this container.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerUnpause">Unpause Container</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerUnpause">Unpause Container</a>
      * @throws IOException If something goes wrong.
      *  the expected one (204 NO CONTENT).
      */
@@ -157,7 +157,7 @@ public interface Container extends JsonObject {
      * Waits on this container.
      * @param state The state to wait for. One of "not-running"
      * (the default if null), "next-exit", or "removed"
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerWait">Wait Container</a>.
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerWait">Wait Container</a>.
      * @throws IOException If something goes wrong.
      *  the expected one (200).
      * @return The exit code of the container

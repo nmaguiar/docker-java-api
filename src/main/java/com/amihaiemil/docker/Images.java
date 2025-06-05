@@ -34,7 +34,7 @@ import java.util.Map;
  * Images API.
  * @author Mihai Andronache (amihaiemil@gmail.com)
  * @version $Id$
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Image">Docker Images API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Image">Docker Images API</a>
  * @since 0.0.1
  * @todo #152:30min Add Fake implementations of Images and Image, in order to
  *  unit test method save() and other future methods which may require more
@@ -94,7 +94,7 @@ public interface Images extends Iterable<Image> {
     /**
      * Save these images in a tarball, by their ID.
      * @return Reader representing the tarball.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageGetAll">Export Images</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageGetAll">Export Images</a>
      * @throws IOException If an I/P error occurs.
      * @throws UnexpectedResponseException If the API responds with an
      *  unexpected status.
@@ -105,7 +105,7 @@ public interface Images extends Iterable<Image> {
      * Filter these images.
      * @param filters Filters to apply.
      * @return Filtered images.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageList">Docker API Docs</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageList">Docker API Docs</a>
      */
     Images filter(Map<String, Iterable<String>> filters);
 

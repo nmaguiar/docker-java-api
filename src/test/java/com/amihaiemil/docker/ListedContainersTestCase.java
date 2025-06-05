@@ -86,7 +86,7 @@ public final class ListedContainersTestCase {
                     }
                 )
             ),
-            "v1.35");
+            "v1.50");
         final Iterator<Container> all = docker.containers()
             .withSize(true).all();
         MatcherAssert.assertThat(
@@ -140,7 +140,7 @@ public final class ListedContainersTestCase {
                     }
                 )
             ),
-            "v1.35").containers().filter(filterMap).iterator();
+            "v1.50").containers().filter(filterMap).iterator();
     }
 
     /**
@@ -188,7 +188,7 @@ public final class ListedContainersTestCase {
                     }
                 )
             ),
-            "v1.35"
+            "v1.50"
         ).containers().filter(initial).filter(added).withSize(true).iterator();
     }
 

@@ -42,7 +42,7 @@ import org.apache.http.client.methods.HttpGet;
  * @since 0.0.2
  * @todo #135:30min Continue implementing this class, take into consideration
  *  the query parameters as described here:
- *  https://docs.docker.com/engine/api/v1.35/#operation/ContainerLogs
+ *  https://docs.docker.com/engine/api/v1.50/#operation/ContainerLogs
  *  Since the class should be immutable, the parameters should come in the ctor
  *  and appended to the requests when they are performed. Let's leave this part
  *  for v0.0.3 or later, it's not urgent now.

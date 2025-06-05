@@ -33,7 +33,7 @@ import javax.json.JsonObject;
  * @author Marco Teixeira (marcoo.teixeira@gmail.com)
  * @author Boris Kuzmic (boris.kuzmic@gmail.com)
  * @version $Id$
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Volume">Docker Volume API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Volume">Docker Volume API</a>
  * @since 0.0.6
  *
  */
@@ -42,7 +42,7 @@ public interface Volume extends JsonObject {
     /**
      * Return low-level information about this volume.
      * @return JsonObject information.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/VolumeInspect">Inspect Volume</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/VolumeInspect">Inspect Volume</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
@@ -54,7 +54,7 @@ public interface Volume extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/VolumeDelete">Remove a volume</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/VolumeDelete">Remove a volume</a>
      */
     void remove() throws IOException, UnexpectedResponseException;
 
@@ -64,7 +64,7 @@ public interface Volume extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/VolumeDelete">Remove a volume</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/VolumeDelete">Remove a volume</a>
      */
     void remove(final boolean force)
         throws IOException, UnexpectedResponseException;

@@ -41,7 +41,7 @@ import org.apache.http.client.HttpClient;
 public final class TcpDocker extends RtDocker {
 
     /**
-     * Tcp Docker engine. API version is 1.35 by default.
+     * Tcp Docker engine. API version is 1.50 by default.
      * @param uri Remote Docker URI.
      * @param keys Path to the keystore.
      * @param trust Path to the truststore.
@@ -51,13 +51,13 @@ public final class TcpDocker extends RtDocker {
     TcpDocker(
         final URI uri, final Path keys, final Path trust,
         final char[] storePwd, final char[] keyPwd) {
-        this(uri, "v1.35", keys, trust, storePwd, keyPwd);
+        this(uri, "v1.50", keys, trust, storePwd, keyPwd);
     }
 
     /**
      * Tcp Docker engine.
      * @param uri Remote Docker URI.
-     * @param version API version (eg. v1.35).
+     * @param version API version (eg. v1.50).
      * @param keys Path to the keystore.
      * @param trust Path to the truststore.
      * @param storePwd Password for the keystore.
@@ -76,7 +76,7 @@ public final class TcpDocker extends RtDocker {
     /**
      * Tcp Docker engine.
      * 
-     * An insecure docker API v1.35 endpoint is assumed.
+     * An insecure docker API v1.50 endpoint is assumed.
      * 
      * @param uri Remote Docker URI.
      */
@@ -87,7 +87,7 @@ public final class TcpDocker extends RtDocker {
     /**
      * Tcp Docker engine.
      * 
-     * An insecure docker API v1.35 endpoint is assumed.
+     * An insecure docker API v1.50 endpoint is assumed.
      * 
      * @param uri Remote Docker URI.
      * @param auth Remote Docker {@link Auth}
@@ -101,13 +101,13 @@ public final class TcpDocker extends RtDocker {
      * most likely with some authentication mechanism, depending on where
      * the Docker engine is on the Network. <br><br>
      *
-     * By default, the API version is 1.35.
+     * By default, the API version is 1.50.
      *
      * @param client The http client to use.
      * @param uri Remote Docker URI.
      */
     public TcpDocker(final HttpClient client, final URI uri) {
-        this(client, uri, "v1.35");
+        this(client, uri, "v1.50");
     }
 
     /**
@@ -117,7 +117,7 @@ public final class TcpDocker extends RtDocker {
      *
      * @param client The http client to use.
      * @param uri Remote Docker URI.
-     * @param version API version (eg. v1.35).
+     * @param version API version (eg. v1.50).
      */
     public TcpDocker(
         final HttpClient client, final URI uri, final String version

@@ -46,7 +46,7 @@ public class RtVersionTestCase {
                     .handleResponse(response);
             });
 
-        Docker docker = new LocalDocker(client, "v1.35");
+        Docker docker = new LocalDocker(client, "v1.50");
 
         Version version = docker.version();
         assertEquals("19.03.3", version.version());

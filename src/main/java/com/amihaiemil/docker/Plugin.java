@@ -33,7 +33,7 @@ import javax.json.JsonObject;
 /**
  * A docker plugin.
  * @author Boris Kuzmic (boris.kuzmic@gmail.com)
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Plugin">Docker Plugin API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Plugin">Docker Plugin API</a>
  * @since 0.0.7
  */
 public interface Plugin extends JsonObject {
@@ -41,7 +41,7 @@ public interface Plugin extends JsonObject {
     /**
      * Return low-level information about this plugin.
      * @return JsonObject information.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/PluginInspect">Inspect a Plugin</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/PluginInspect">Inspect a Plugin</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
@@ -89,7 +89,7 @@ public interface Plugin extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/PluginSet">Configure a plugin</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/PluginSet">Configure a plugin</a>
      */
     void configure(Map<String, String> options)
         throws IOException, UnexpectedResponseException;

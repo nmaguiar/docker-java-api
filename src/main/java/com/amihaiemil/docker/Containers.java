@@ -92,7 +92,7 @@ public interface Containers extends Iterable<Container> {
      * Filter these Containers.
      * @param filters Filters to apply.
      * @return Filtered containers.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ContainerList">Docker API Docs</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerList">Docker API Docs</a>
      */
     Containers filter(Map<String, Iterable<String>> filters);
 

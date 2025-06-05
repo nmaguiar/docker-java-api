@@ -42,7 +42,7 @@ import org.mockito.Mockito;
 /**
  * Unit tests for RtContainers.
  * @author Mihai Andronache (amihaiemil@gmail.com)
- * @see <a href="https://docs.docker.com/engine/api/v1.30/#operation/ContainerCreate">Docker ContainerCreate API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ContainerCreate">Docker ContainerCreate API</a>
  * @version $Id$
  * @since 0.0.1
  * @checkstyle MethodName (500 lines)

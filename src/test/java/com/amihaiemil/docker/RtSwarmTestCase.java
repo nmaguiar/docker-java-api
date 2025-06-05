@@ -38,7 +38,7 @@ import org.mockito.Mockito;
 /**
  * Unit tests for {@link RtSwarm}.
  * @author George Aristy (george.aristy@gmail.com)
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Swarm">Docker Swarm API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Swarm">Docker Swarm API</a>
  * @version $Id$
  * @since 0.0.1
  * @checkstyle MethodName (500 lines)

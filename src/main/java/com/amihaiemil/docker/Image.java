@@ -32,7 +32,7 @@ import javax.json.JsonObject;
  * A docker image.
  * @author George Aristy (george.aristy@gmail.com)
  * @version $Id$
- * @see <a href="https://docs.docker.com/engine/api/v1.35/#tag/Image">Docker Images API</a>
+ * @see <a href="https://docs.docker.com/engine/api/v1.50/#tag/Image">Docker Images API</a>
  * @since 0.0.1
  */
 public interface Image extends JsonObject {
@@ -40,7 +40,7 @@ public interface Image extends JsonObject {
     /**
      * Return low-level information about this image. 
      * @return JsonObject information.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageInspect">Inspect Image</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageInspect">Inspect Image</a>
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
@@ -50,7 +50,7 @@ public interface Image extends JsonObject {
     /**
      * Return parent layers of this Image.
      * @return An Iterable containing the parents of this Image.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageHistory">Image History</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageHistory">Image History</a>
      */
     Iterable<Image> history();
 
@@ -60,7 +60,7 @@ public interface Image extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageDelete">Remove an image</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageDelete">Remove an image</a>
      */
     void delete() throws IOException, UnexpectedResponseException;
 
@@ -71,7 +71,7 @@ public interface Image extends JsonObject {
      * @throws IOException If something goes wrong.
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/ImageTag">Tag an image</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/ImageTag">Tag an image</a>
      */
     void tag(
         String repo, String name

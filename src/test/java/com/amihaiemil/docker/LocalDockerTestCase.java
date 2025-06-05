@@ -65,7 +65,7 @@ public final class LocalDockerTestCase {
                 new AssertRequest(
                     new Response(HttpStatus.SC_OK, "")
                 ),
-                "v1.35"
+                "v1.50"
             ).ping(),
             Matchers.is(true)
         );
@@ -82,7 +82,7 @@ public final class LocalDockerTestCase {
                 new AssertRequest(
                     new Response(HttpStatus.SC_NOT_FOUND, "")
                 ),
-                "v1.35"
+                "v1.50"
             ).ping(),
             Matchers.is(false)
         );

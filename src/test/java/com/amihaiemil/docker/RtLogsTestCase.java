@@ -90,7 +90,7 @@ public final class RtLogsTestCase {
                     )
                 )
             ),
-            URI.create("http://localhost:80/1.30/containers/123/logs")
+            URI.create("http://localhost:80/1.50/containers/123/logs")
         );
         try (final BufferedReader bfr = new BufferedReader(logs.follow());) {
             MatcherAssert.assertThat(
@@ -122,7 +122,7 @@ public final class RtLogsTestCase {
                     )
                 )
             ),
-            URI.create("http://localhost:80/1.30/containers/123/logs")
+            URI.create("http://localhost:80/1.50/containers/123/logs")
         );
         MatcherAssert.assertThat(
             logs.fetch(),
@@ -180,7 +180,7 @@ public final class RtLogsTestCase {
                     )
                 )
             ),
-            URI.create("http://localhost:80/1.30/containers/123/logs")
+            URI.create("http://localhost:80/1.50/containers/123/logs")
         );
         MatcherAssert.assertThat(
             logs.toString(),
@@ -212,7 +212,7 @@ public final class RtLogsTestCase {
                     )
                 )
             ),
-            URI.create("http://localhost:80/1.30/containers/123/logs")
+            URI.create("http://localhost:80/1.50/containers/123/logs")
         );
         MatcherAssert.assertThat(
             logs.stdout().fetch(),
@@ -244,7 +244,7 @@ public final class RtLogsTestCase {
                     )
                 )
             ),
-            URI.create("http://localhost:80/1.30/containers/123/logs")
+            URI.create("http://localhost:80/1.50/containers/123/logs")
         );
         MatcherAssert.assertThat(
             logs.stderr().fetch(),

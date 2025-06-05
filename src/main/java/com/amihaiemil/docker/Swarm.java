@@ -32,13 +32,13 @@ import javax.json.JsonObject;
  * Docker engines can be clustered together in a swarm.
  * <p>
  * See the <a href="https://docs.docker.com/engine/swarm/">swarm mode</a> and
- * <a href="https://docs.docker.com/engine/api/v1.35/#tag/Swarm">swarm API</a>
+ * <a href="https://docs.docker.com/engine/api/v1.50/#tag/Swarm">swarm API</a>
  * documentation for more information.
  * @author George Aristy (george.aristy@gmail.com)
  * @version $Id$
  * @since 0.0.1
  * @todo #77:30min Continue implementing the rest of the Swarm operations. See
- *  https://docs.docker.com/engine/api/v1.35/#tag/Swarm for reference and also
+ *  https://docs.docker.com/engine/api/v1.50/#tag/Swarm for reference and also
  *  the roadmap laid out here:
  *  https://github.com/amihaiemil/docker-java-api/issues/3#issuecomment-375821822
  */

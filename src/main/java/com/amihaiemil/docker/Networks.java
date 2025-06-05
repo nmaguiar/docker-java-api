@@ -44,7 +44,7 @@ public interface Networks extends Iterable<Network> {
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
      * @return The created network.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkCreate">Create a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkCreate">Create a network</a>
      */
     Network create(final String name)
         throws IOException, UnexpectedResponseException;
@@ -57,7 +57,7 @@ public interface Networks extends Iterable<Network> {
      * @throws UnexpectedResponseException If the status response is not
      *  the expected one (200 OK).
      * @return The created network.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkCreate">Create a network</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkCreate">Create a network</a>
      */
     Network create(final String name, JsonObject parameters)
         throws IOException, UnexpectedResponseException;
@@ -74,7 +74,7 @@ public interface Networks extends Iterable<Network> {
      * Filter these networks.
      * @param filters Filters to apply.
      * @return Filtered networks.
-     * @see <a href="https://docs.docker.com/engine/api/v1.35/#operation/NetworkList">Docker API Docs</a>
+     * @see <a href="https://docs.docker.com/engine/api/v1.50/#operation/NetworkList">Docker API Docs</a>
      */
     Networks filter(Map<String, Iterable<String>> filters);
 
