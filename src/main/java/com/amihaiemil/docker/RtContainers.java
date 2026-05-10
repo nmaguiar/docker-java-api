@@ -115,6 +115,7 @@ abstract class RtContainers implements Containers {
         }
         final HttpPost post = new HttpPost(uri);
         try {
+            post.setHeader("Content-Type", "application/json");
             post.setEntity(
                 new StringEntity(
                     container.toString(),
