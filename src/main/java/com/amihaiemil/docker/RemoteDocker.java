@@ -22,14 +22,13 @@
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
-    /**
-     * Remote Docker engine. API version is 1.44 by default.
-     * @param uri Docker Host URI.
-     * @param keys Certificates path.
-     * @param trust Trust store path.
-     * @param storePwd Store password.
-     * @param keyPwd Key password.
-     */
+ */
+package com.amihaiemil.docker;
+
+import java.net.URI;
+import java.nio.file.Path;
+import org.apache.http.client.HttpClient;
+
 /**
  * Use this to communicate with a remote Docker API.
  * @deprecated Please use TcpDocker instead. It does
